@@ -1,0 +1,92 @@
+{
+  "vimeo_user": "abdulrahmanhamad",
+  "role": "Film Director.",
+  "about": [
+    "I'm Abdulrahman Hamad, an Egyptian film director and writer. For more than 15 years I've been working between Cairo and Riyadh on commercials, music videos, series, feature films, animation, and recently AI-generated films.",
+    "I didn't come to directing through one door. I've worked in production, on camera, in the art department, in animation, VFX, the edit and the color suite. So on set I know what every department needs, and what each decision will cost later in the cut.",
+    "I start from the idea and the script, and I stay with the film until the final grade, often through my own post-production studio, Whales Pictures. What I care about is simple: an image that means something, a rhythm you can feel, and a performance you believe."
+  ],
+  "facts": [
+    {
+      "label": "Studio",
+      "value": "Founder, Whales Pictures",
+      "note": "Post-production: edit, VFX, color"
+    },
+    {
+      "label": "Series",
+      "value": "Faragna, Discovery",
+      "note": ""
+    },
+    {
+      "label": "Education",
+      "value": "BA Advertising, Faculty of Applied Arts",
+      "note": "Filmmaking diploma, French University in Egypt"
+    }
+  ],
+  "email": "hi@abdulrahmanhamad.com",
+  "phone": "+20 111 222 3225",
+  "whatsapp": "+20 111 222 3225",
+  "links": {
+    "vimeo": "https://vimeo.com/abdulrahmanhamad",
+    "instagram": "https://www.instagram.com/abdulrahmanhamadd/",
+    "imdb": "https://www.imdb.com/name/nm9793939/",
+    "linkedin": "https://www.linkedin.com/in/abdulrahmanhamadd"
+  },
+  "role_ar": "مخرج سينمائي.",
+  "about_ar": [
+    "أنا عبدالرحمن حمد، مخرج وكاتب مصري. منذ أكثر من ١٥ عامًا وأنا أعمل بين القاهرة والرياض: إعلانات، وفيديو كليب، ومسلسلات، وأفلام طويلة، ورسوم متحركة، ومؤخرًا أفلام مولّدة بالذكاء الاصطناعي.",
+    "لم أدخل الإخراج من باب واحد. عملت في الإنتاج، والتصوير، والديكور، والرسوم المتحركة، والمؤثرات البصرية، والمونتاج، والتلوين. لذلك أعرف في موقع التصوير ما يحتاجه كل قسم، وما سيكلّفه كل قرار لاحقًا في غرفة المونتاج.",
+    "أبدأ من الفكرة والسيناريو، وأبقى مع الفيلم حتى آخر لمسة لون، غالبًا من خلال استوديو ما بعد الإنتاج الخاص بي، Whales Pictures. ما يهمني بسيط: صورة لها معنى، وإيقاع تشعر به، وأداء تصدّقه."
+  ],
+  "facts_ar": [
+    {
+      "label": "الاستوديو",
+      "value": "مؤسس Whales Pictures",
+      "note": "ما بعد الإنتاج: مونتاج، مؤثرات بصرية، تصحيح ألوان"
+    },
+    {
+      "label": "المسلسلات",
+      "value": "الفراجنة، ديسكفري",
+      "note": ""
+    },
+    {
+      "label": "الدراسة",
+      "value": "بكالوريوس الإعلان، كلية الفنون التطبيقية",
+      "note": "دبلومة صناعة الأفلام، الجامعة الفرنسية في مصر"
+    }
+  ],
+  "story": [
+    {
+      "type": "commercial",
+      "title": "Commercials",
+      "title_ar": "إعلانات",
+      "text": "A commercial has one minute to tell a story and leave something behind. I look for the one image that carries the brand, then build the film around it.",
+      "text_ar": "أمام الإعلان دقيقة واحدة ليحكي قصة ويترك أثرًا. أبحث عن الصورة الواحدة التي تحمل العلامة، ثم أبني الفيلم حولها.",
+      "cover": "assets/work/cover-commercials.webp"
+    },
+    {
+      "type": "music video",
+      "title": "Music Videos",
+      "title_ar": "فيديو كليب",
+      "text": "The song already has a story. My job is to give it a face, a place and a rhythm the eye can follow.",
+      "text_ar": "الأغنية تحمل قصتها بالفعل. مهمتي أن أمنحها وجهًا ومكانًا وإيقاعًا تتبعه العين.",
+      "cover": "assets/work/cover-music.webp"
+    },
+    {
+      "type": "film",
+      "title": "Narrative",
+      "cover": "assets/work/cover-narrative.webp",
+      "title_ar": "أفلام",
+      "text": "Series and films give characters time to breathe. This is where I write more, and where I stay closest to the actors, until what is on screen feels true.",
+      "text_ar": "المسلسلات والأفلام تمنح الشخصيات وقتًا لتتنفس. هنا أكتب أكثر، وأبقى أقرب إلى الممثلين، حتى يصبح ما على الشاشة صادقًا."
+    },
+    {
+      "type": "animation",
+      "title": "Animation",
+      "title_ar": "رسوم متحركة",
+      "text": "This is where I began, and I never left. Animation taught me that nothing on screen happens by accident: every movement is a decision.",
+      "text_ar": "من هنا بدأت، ولم أغادرها أبدًا. علّمتني الرسوم المتحركة أن لا شيء على الشاشة يحدث صدفة: كل حركة قرار.",
+      "cover": "assets/work/cover-animation.webp"
+    }
+  ]
+}
