@@ -323,7 +323,7 @@ html[lang="ar"] .final h2{line-height:1.3}
 .rew{display:inline-flex;align-items:center;gap:8px}.rew svg{width:15px;height:15px}
 
 /* scene selection */
-.scenes{position:fixed;inset:0;z-index:70;background:var(--ink);color:var(--paper);overflow:auto;padding:96px var(--gut) 60px;clip-path:inset(0 0 100% 0);visibility:hidden;transition:clip-path .9s var(--ease-io),visibility 0s .9s}
+.scenes{position:fixed;inset:0;z-index:70;background:var(--ink);color:var(--paper);overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:96px var(--gut) 60px;clip-path:inset(0 0 100% 0);visibility:hidden;transition:clip-path .9s var(--ease-io),visibility 0s .9s}
 .scenes.is-open{clip-path:inset(0);visibility:visible;transition:clip-path .9s var(--ease-io)}
 .scenes h2{font-size:13px;font-weight:600;color:#a7a6a0;margin-bottom:32px}
 .scenes ol{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:28px 22px}
@@ -581,7 +581,7 @@ function land(){var ln=document.querySelector('.open .ln'),hp=document.querySele
   <div class="cr-bot"><a href="#top" class="rew"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5v14l-8 -7z"/><path d="M12 5v14l-8 -7z"/><path d=""/></svg><span class="l-en">Rewind</span><span class="l-ar" lang="ar">من البداية</span></a><span>&copy; <span data-t>Abdulrahman Hamad</span></span></div>
 </footer>
 
-<div class="scenes" id="scenes" aria-hidden="true" role="dialog" aria-label="Scene selection">
+<div class="scenes" id="scenes" data-lenis-prevent aria-hidden="true" role="dialog" aria-label="Scene selection">
   <button class="close" id="scn-close" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6l-12 12"/><path d="M6 6l12 12"/></svg><span class="l-en">Close</span><span class="l-ar" lang="ar">إغلاق</span></button>
   <h2><span class="l-en">Scene selection</span><span class="l-ar" lang="ar">اختيار المشهد</span></h2>
   <ol id="scn-list"></ol>
