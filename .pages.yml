@@ -1,0 +1,128 @@
+# Pages CMS (https://pagescms.org) editing panel for the website.
+# Open app.pagescms.org, sign in with GitHub, pick this repository.
+media:
+  input: assets/work
+  output: assets/work
+content:
+  - name: works
+    label: Work (videos)
+    type: file
+    path: works.json
+    format: json
+    list: true
+    fields:
+      - name: vimeo
+        label: Vimeo link
+        type: string
+        required: true
+      - name: title
+        label: Title (leave empty to use the Vimeo title)
+        type: string
+      - name: brand
+        label: Brand or artist shown on the picture (leave empty to show the title)
+        type: string
+      - name: client
+        label: Client / artist / note
+        type: string
+      - name: type
+        label: Category
+        type: select
+        values: [ commercial, music video, film, animation ]
+      - name: year
+        label: Year
+        type: number
+      - name: arabic
+        label: Arabic title (optional)
+        type: string
+      - name: featured
+        label: Show first, big
+        type: boolean
+      - name: thumb
+        label: Custom thumbnail (optional, leave empty to use Vimeo's)
+        type: image
+      - name: logo
+        label: Brand logo (optional, a PNG or SVG with a transparent background; shown in white instead of the brand name)
+        type: image
+      - name: hide
+        label: Hide this video from the site
+        type: boolean
+  - name: site
+    label: Site texts and contact
+    type: file
+    path: site.json
+    format: json
+    fields:
+      - name: vimeo_user
+        label: Vimeo account (every public video there appears on the site automatically)
+        type: string
+      - name: role
+        label: Line under your name
+        type: string
+      - name: role_ar
+        label: Line under your name (Arabic)
+        type: string
+      - name: about
+        label: About paragraphs
+        type: text
+        list: true
+      - name: about_ar
+        label: About paragraphs (Arabic)
+        type: text
+        list: true
+      - name: facts
+        label: About facts
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Label, type: string }
+          - { name: value, label: Value, type: string }
+          - { name: note, label: Small note (optional), type: string }
+      - name: facts_ar
+        label: About facts (Arabic)
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Label, type: string }
+          - { name: value, label: Value, type: string }
+          - { name: note, label: Small note (optional), type: string }
+      - name: email
+        label: Email
+        type: string
+      - name: phone
+        label: Phone (leave empty to hide)
+        type: string
+      - name: whatsapp
+        label: WhatsApp (leave empty to hide)
+        type: string
+      - name: links
+        label: Profile links (leave empty to hide)
+        type: object
+        fields:
+          - { name: vimeo, label: Vimeo, type: string }
+          - { name: instagram, label: Instagram, type: string }
+          - { name: imdb, label: IMDb, type: string }
+          - { name: linkedin, label: LinkedIn, type: string }
+      - name: story
+        label: Story chapters (leave empty to use the built-in texts)
+        type: object
+        list: true
+        fields:
+          - name: type
+            label: Which videos go in this chapter
+            type: select
+            values: [ animation, commercial, music video, film ]
+          - name: title
+            label: Chapter title
+            type: string
+          - name: title_ar
+            label: Chapter title (Arabic)
+            type: string
+          - name: text
+            label: Chapter text
+            type: text
+          - name: text_ar
+            label: Chapter text (Arabic)
+            type: text
+          - name: cover
+            label: Chapter cover image
+            type: image
