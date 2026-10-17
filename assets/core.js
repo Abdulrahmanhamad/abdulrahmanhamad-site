@@ -66,7 +66,7 @@
     try { const c = JSON.parse(localStorage.getItem(key) || 'null'); if (c && Date.now() - c.t < 10 * 60e3) return c.v; } catch (e) { }
     const all = [];
     for (let p = 1; p <= 3; p++) {
-      const ctl = new AbortController(), tm = setTimeout(() => ctl.abort(), 5000);
+      const ctl = new AbortController(), tm = setTimeout(() => ctl.abort(), 2500);
       try {
         const r = await fetch(`https://vimeo.com/api/v2/${VIMEO_USER()}/videos.json?page=${p}`, { signal: ctl.signal });
         clearTimeout(tm); if (!r.ok) break;
