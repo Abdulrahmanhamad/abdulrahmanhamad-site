@@ -468,6 +468,9 @@ dialog.player{--fg:#edece8;--fg-2:#a6a59f;--fg-3:#8b8a85;--line:#2a2a2e;--bg-3:#
 .top [data-s]:hover{color:var(--amber)}
 .acts a:hover,.acts button:hover,.more a:hover,.pill:hover,.top .scn-btn:hover,.top .tog button:hover,.top button:hover{color:var(--amber);border-color:var(--amber);background:transparent}
 html[data-theme="light"] .top.on-light nav a:hover,html[data-theme="light"] .top.on-light .logo:hover{color:#8a5a12;text-shadow:none}
+.open__cta .pill,.open__cta .pill--solid{font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em;font-size:13px;font-weight:500;background:transparent;color:var(--paper);border-color:currentColor}
+.open__cta .pill:hover,.open__cta .pill--solid:hover{color:var(--amber);border-color:var(--amber);background:transparent}
+#nl-badge-frame,iframe[id^="nl-badge"]{display:none!important}
 </style>
 </head>
 <body>
@@ -476,6 +479,7 @@ html[data-theme="light"] .top.on-light nav a:hover,html[data-theme="light"] .top
 if(seen||matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('no-pre');window.__preDone=true;return}
 d.classList.add('pre-on');var pn=document.getElementById('pn'),pre=document.getElementById('pre'),t0=performance.now(),D=2200;
 function step(){var tp=Math.min(1,(performance.now()-t0)/D),v=Math.floor(Math.min(tp,window.__ready?1:.9)*100);pn.textContent=v;if(v<100)requestAnimationFrame(step);else (document.fonts?document.fonts.ready:Promise.resolve()).then(fin)}
+setTimeout(function(){window.__ready=true},4000);
 requestAnimationFrame(step);
 addEventListener('DOMContentLoaded',function(){var hs=document.querySelector('.ln__name span');if(hs&&hs.getClientRects().length>1)document.querySelector('.pre__row').classList.add('col')});
 function done(){d.classList.remove('pre-on','pre-land');try{sessionStorage.setItem('pre','1')}catch(e){}window.__preDone=true;dispatchEvent(new Event('pre:done'))}
